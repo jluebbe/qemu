@@ -45,4 +45,8 @@ RUN cd /src && \
 
 FROM base-stage AS final-stage
 
+RUN sudo apt-get update && \
+  sudo apt-get install -q -y --no-install-recommends \
+  mmc-utils
+
 COPY --from=build-stage /usr/local /usr/local
