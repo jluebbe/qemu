@@ -18,7 +18,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: rauc-ci-qemu
-        tags: latest
+        tags: trixie
         platforms: linux/amd64
         containerfiles: |
           ./Containerfile

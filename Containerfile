@@ -1,5 +1,4 @@
-#FROM debian:bookworm AS base-stage
-FROM ghcr.io/rauc/rauc/rauc-ci:latest AS base-stage
+FROM ghcr.io/rauc/rauc/rauc-ci:trixie AS base-stage
 
 FROM base-stage AS build-stage
 
